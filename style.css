@@ -1,0 +1,81 @@
+html{
+    box-sizing:border-box;
+    height:100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing:inherit;
+    margin:0;
+    padding:0;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(135deg,#eb92eb,#ffef78,#63c9b4);
+}
+
+.wrapper{
+    width:400px;
+    padding:20px;
+    border-radius:20px;
+    backdrop-filter:blur(12px);
+    background:rgba(255,255,255,.25);
+    border:1px solid rgba(255,255,255,.3);
+    box-shadow:0 8px 32px rgba(0,0,0,.2);
+}
+
+.screen{
+    width:100%;
+    height:80px;
+    margin-bottom:20px;
+    padding:15px;
+    border-radius:10px;
+    background:rgba(255,255,255,.5);
+    text-align:right;
+    font-size:40px;
+    overflow:hidden;
+}
+
+.calc-button-row{
+    display:flex;
+    margin-bottom:10px;
+    gap:10px;
+}
+
+.calc-button{
+    flex:1;
+    height:70px;
+    border:none;
+    border-radius:10px;
+    font-size:25px;
+    cursor:pointer;
+    background:white;
+    transition:.2s;
+}
+
+.calc-button:hover{
+    background:#ddd;
+}
+
+.operator{
+    background:#ff9500;
+    color:white;
+}
+
+.operator:hover{
+    background:#e68900;
+}
+
+.double{
+    flex:2;
+}
+
+.triple{
+    flex:3;
+}
